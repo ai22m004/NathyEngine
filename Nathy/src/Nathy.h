@@ -1,7 +1,8 @@
 #pragma once
 
 # include "Nathy/Application.h"
-# include <stdio.h>
+
+# include "Nathy/Log.h"
 
 //ENTRYPOINT
 

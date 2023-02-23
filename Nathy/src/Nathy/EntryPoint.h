@@ -8,7 +8,9 @@ extern Nathy::Application* Nathy::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	printf("Hallo from Nathy Engine");
+	Nathy::Log::Init();
+	NY_CORE_WARN("Aweh do kummt wos!");
+	NY_INFO("Aweh do is wos!");
 	auto app = Nathy::CreateApplication();
 	app->Run();
 	delete app;
