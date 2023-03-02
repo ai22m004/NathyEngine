@@ -26,4 +26,4 @@ What is a package manager in C++? Name 3 package manager:
 
 - For c++ there is a package manager out there named conan, but I have never used it. 
 
-- Basically everyone does package-management him/herself with includes.
+- There are also Package Mangers out there like vcpkg and Buckaroo.
