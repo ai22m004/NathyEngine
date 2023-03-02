@@ -22,7 +22,7 @@ What is a build system in C++? Name 3 build systems:
 
 What is a package manager in C++? Name 3 package manager:
 
-- A software that installs and administrates all the different packages needed for the application. Python has pip as an example, but c++ has no real software for it.
+- A software that installs and administrates all the different packages needed for the application. Python has pip as an example, which is very popular.
 
 - For c++ there is a package manager out there named conan, but I have never used it. 
 
