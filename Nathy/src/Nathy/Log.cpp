@@ -1,3 +1,4 @@
+#include "nypch.h"
 #include "Log.h"
 
 namespace Nathy {

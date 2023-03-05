@@ -4,6 +4,15 @@
     <Filter Include="Nathy">
       <UniqueIdentifier>{89A3B90D-F5B7-E1BE-BE39-851E2A0DDEEF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nathy\Events">
+      <UniqueIdentifier>{4DDBD468-393E-640D-E2C3-9CC3CE053090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nathy.h" />
@@ -16,9 +25,28 @@
     <ClInclude Include="src\Nathy\EntryPoint.h">
       <Filter>Nathy</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nathy\Events\ApplicationEvent.h">
+      <Filter>Nathy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nathy\Events\Event.h">
+      <Filter>Nathy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nathy\Events\KeyEvent.h">
+      <Filter>Nathy\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nathy\Events\MouseEvent.h">
+      <Filter>Nathy\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nathy\Log.h">
       <Filter>Nathy</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nathy\Window.h">
+      <Filter>Nathy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\nypch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nathy\Application.cpp">
@@ -27,5 +55,9 @@
     <ClCompile Include="src\Nathy\Log.cpp">
       <Filter>Nathy</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nypch.cpp" />
   </ItemGroup>
 </Project>

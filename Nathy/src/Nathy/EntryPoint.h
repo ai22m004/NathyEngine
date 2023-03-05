@@ -2,8 +2,6 @@
 
 #ifdef NY_PLATFORM_WINDOWS
 
-
-
 extern Nathy::Application* Nathy::CreateApplication();
 
 int main(int argc, char** argv)

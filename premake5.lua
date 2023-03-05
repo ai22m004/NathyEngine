@@ -10,6 +10,11 @@ workspace "Nathy"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Nathy/vendor/GLFW/include"
+
+include "Nathy/vendor/GLFW"
+
 project "Nathy"
     location "Nathy"
     kind "SharedLib"
@@ -17,6 +22,9 @@ project "Nathy"
 
     targetdir("bin/" .. outputdir .."/%{prj.name}")
     objdir (("bin-int/" .. outputdir .."/%{prj.name}"))
+
+    pchheader "nypch.h"
+    pchsource "Nathy/src/nypch.cpp"
 
     files
     {
@@ -26,8 +34,17 @@ project "Nathy"
 
     includedirs 
     {
-        "%{prj.name}/vendor/spdlog/include";
+        "%{prj.name}/src",
+        "%{prj.name}/vendor/spdlog/include",
+        "%{IncludeDir.GLFW}"
     }
+
+    links 
+    {
+        "GLFW",
+        "opengl32.lib"
+    }
+
 
     filter "system:windows"
         cppdialect "C++14"
@@ -83,7 +100,7 @@ project "Beachbox"
     }
 
     filter "system:windows"
-        cppdialect "C++14"
+        cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
 
