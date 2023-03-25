@@ -2,13 +2,13 @@
 
 Static Libraries are always loaded, dynamic libraries not.   das einen eine .dll, das andere eine .lib. Dynamic - loaded on demand vs Static - always loaded
 
-- Describe a logging system with your own words:
+- Describe an event system with your own words:
 
-A logging system has the aim to track any actions on the system. So the logging enables us to see different user/server actions like things getting created or beeing destroyed. The logs are then kept in the background in order to have a look at them when needed.
+An event system has the purpose to track and register all events happening in a system so that it makes handling them possible and easy to understand.
 
 - What is a Design Pattern?
 
-A Design Pattern is a structure that programmers use to implement a solution in a very smart and efficient way. It is some kind of software design with a single purpose that tends to simplify and structurize patterns.
+A Design Pattern is a structure that programmers use to implement a solution in a very smart and efficient way. It is some kind of software design with a single purpose that tends to simplify and structurize patterns. The problems requiring Design Patterns are often substantial and occur often.
 
 - Name and describe 2 Design Patterns (except façade or adapter):
 
